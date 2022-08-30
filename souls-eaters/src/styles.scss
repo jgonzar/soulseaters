@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&family=Tomorrow:wght@100;300;400;600;700&display=swap');
+:root{
+  --lightgrey : #f2f2f2;
+  --blue: #00ACE6;
+  --black:#181818;
+  --white:#FFF;
+  --tomorrow:'Tomorrow', sans-serif;
+  --montserrat:'Montserrat', sans-serif;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html, body{
+  height: 100%;
+  width:100%;
+  font-size:62.5%;
+  line-height: 1.3;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;
+}

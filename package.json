@@ -1,0 +1,23 @@
+{
+  "name": "soulseaters",
+  "version": "1.0.0",
+  "description": "This an online game store built with Angular and bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgonzar/soulseaters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgonzar/soulseaters/issues"
+  },
+  "homepage": "https://github.com/jgonzar/soulseaters#readme",
+  "dependencies": {
+    "@angular/cli": "^14.1.3"
+  }
+}

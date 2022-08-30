@@ -1,0 +1,7 @@
+.products-grid-container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:15px;
+  width:100%;
+  padding:4% 5%;
+}
