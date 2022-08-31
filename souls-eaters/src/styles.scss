@@ -5,6 +5,7 @@
   --blue: #00ACE6;
   --black:#181818;
   --white:#FFF;
+  --yellow:#f1c40f;
   --tomorrow:'Tomorrow', sans-serif;
   --montserrat:'Montserrat', sans-serif;
 }
@@ -19,6 +20,6 @@ html, body{
   font-size:62.5%;
   line-height: 1.3;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,ul{
   margin:0;
 }

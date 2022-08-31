@@ -6,14 +6,18 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
 import { ImgComponent } from './components/img/img.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ProductsComponent } from './components/products/products.component'
+import { ProductsComponent } from './components/products/products.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HeroComponent } from './components/hero/hero.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ImgComponent,
-    ProductsComponent
+    ProductsComponent,
+    HeaderComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

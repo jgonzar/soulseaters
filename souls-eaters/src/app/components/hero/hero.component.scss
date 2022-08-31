@@ -1,0 +1,42 @@
+.carousel-item{
+  position:relative;
+  img{
+    position: relative;
+    height:160px;
+    width:100%;
+  }
+  .carousel-caption{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top:30px;
+    text-align: start;
+    z-index: 200;
+    padding: 3% 0;
+    h3{
+      width:66%;
+      padding:2% 4%;
+      border-radius: 20px;
+      background-color: var(--yellow);
+      font-family: var(--tomorrow);
+      color: var(--black);
+      font-size:2rem;
+      font-weight:400;
+      letter-spacing: 1px;
+    }
+    p{
+      width: 32%;
+      padding:2% 3%;
+      border:1px solid var(--blue);
+      border-radius: 20px;
+      background-color: var(--black);
+      margin-top: 5px;
+      font-family: var(--montserrat);
+      font-size: 0.8rem;
+      font-weight:400;
+      color:var(--white);
+    }
+  }
+}
+
+
