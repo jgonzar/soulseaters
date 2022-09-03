@@ -1,0 +1,42 @@
+.whatsnew-grid-container{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding:4% 5%;
+  background-color: var(--blue);
+  .text-container{
+    text-align: left;
+    h3, h1, p{
+      color:var(--white);
+    }
+    h3{
+      font-size:1.6rem;
+    }
+    h1{
+      font-size: 2.4rem;
+    }
+    p{
+      font-size: 1.2rem;
+      padding-top:15px;
+    }
+    a{
+      text-decoration: none;
+    }
+    button{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding:2% 3%;
+      margin:15px 0;
+      border:1px solid transparent;
+      border-radius: 5px;
+      font-family:var(--tomorrow);
+      font-size:1.4rem;
+      color:var(--black);
+      background-color:var(--white);
+    }
+  }
+  .img-container{
+    display:flex;
+    padding:15px 0;
+  }
+}

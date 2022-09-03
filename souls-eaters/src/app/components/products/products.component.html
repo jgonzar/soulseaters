@@ -1,3 +1,12 @@
-<div class="products-grid-container">
-  <app-product [product]="product" *ngFor="let product of products"></app-product>
-</div>
+<section class="products-section-container">
+  <div class="products-heading-container">
+    <h2>Featured Games</h2>
+    <a href="/">
+      View All Products
+      <fa-icon [icon]="faChevronRight"></fa-icon>
+    </a>
+  </div>
+  <div class="products-grid-container">
+    <app-product [product]="product" *ngFor="let product of products"></app-product>
+  </div>
+</section>

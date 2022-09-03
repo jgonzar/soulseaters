@@ -1,0 +1,23 @@
+.category-card{
+  display:flex;
+  height:105px;
+  width: 105px;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  border-radius: 15px;
+  p{
+    font-size:1.4rem;
+    font-family: var(--tomorrow);
+    color:var(--white);
+  }
+}
+.ct1{
+  background-image:url('../../../assets/soulsborn.jpg');
+}
+.ct2{
+  background-image:url('../../../assets/metroidvania.jpg');
+}
+.ct3{
+  background-image:url('../../../assets/pixelart.jpg');
+}

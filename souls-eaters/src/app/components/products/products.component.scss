@@ -1,3 +1,19 @@
+.products-heading-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:4% 5% 0;
+  a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:var(--black);
+    opacity:0.8;
+  }
+  a:hover{
+    opacity:1;
+  }
+}
 .products-grid-container{
   display:grid;
   grid-template-columns:repeat(2, 1fr);

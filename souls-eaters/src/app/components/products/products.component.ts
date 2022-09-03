@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product.model';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-products',
@@ -7,6 +8,9 @@ import { Product } from '../../models/product.model';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+
+  // icons
+  faChevronRight = faChevronRight;
 
   products:Product[] = [{
     id:1,

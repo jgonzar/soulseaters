@@ -1,0 +1,22 @@
+.categories-container{
+  background-color: #f2f2f2;
+  .categories-heading{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:4% 5% 0;
+    a{
+      font-size:1.2rem;
+      fa-icon{
+        margin-left:2.5px;
+      }
+    }
+  }
+  .categories-grid-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:5px;
+    padding:4% 5%;
+  }
+}

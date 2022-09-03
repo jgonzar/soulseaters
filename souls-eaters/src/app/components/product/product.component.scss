@@ -43,7 +43,7 @@
       display:grid;
       grid-template-columns: repeat(2, 1fr);
       position: absolute;
-      right:0;
+      right:5px;
       top:-15px;
       width:40%;
       .cart-btn, .fav-btn{
@@ -58,6 +58,9 @@
         background-color: var(--black);
         fa-icon{
           color:var(--white);
+        }
+        fa-icon:hover{
+          color:var(--blue);
         }
       }
     }

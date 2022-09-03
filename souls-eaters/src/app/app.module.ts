@@ -8,7 +8,10 @@ import { ImgComponent } from './components/img/img.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductsComponent } from './components/products/products.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component'
+import { HeroComponent } from './components/hero/hero.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoryComponent } from './components/category/category.component';
+import { WhatsnewComponent } from './components/whatsnew/whatsnew.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { HeroComponent } from './components/hero/hero.component'
     ImgComponent,
     ProductsComponent,
     HeaderComponent,
-    HeroComponent
+    HeroComponent,
+    CategoriesComponent,
+    CategoryComponent,
+    WhatsnewComponent
   ],
   imports: [
     BrowserModule,
