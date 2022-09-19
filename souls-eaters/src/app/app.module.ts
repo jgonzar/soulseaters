@@ -11,7 +11,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoryComponent } from './components/category/category.component';
-import { WhatsnewComponent } from './components/whatsnew/whatsnew.component'
+import { WhatsnewComponent } from './components/whatsnew/whatsnew.component';
+import { OnsaleComponent } from './components/onsale/onsale.component';
+import { BlogSectionComponent } from './components/blog-section/blog-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { WhatsnewComponent } from './components/whatsnew/whatsnew.component'
     HeroComponent,
     CategoriesComponent,
     CategoryComponent,
-    WhatsnewComponent
+    WhatsnewComponent,
+    OnsaleComponent,
+    BlogSectionComponent,
+    FooterComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

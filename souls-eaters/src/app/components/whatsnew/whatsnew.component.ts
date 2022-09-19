@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-whatsnew',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./whatsnew.component.scss']
 })
 export class WhatsnewComponent implements OnInit {
+
+  faChevronRight = faChevronRight;
 
   constructor() { }
 

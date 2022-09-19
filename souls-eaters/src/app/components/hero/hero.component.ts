@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselGame } from 'src/app/models/herogame.model';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+// import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-hero',
@@ -9,7 +9,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeroComponent implements OnInit {
   // icons
-  faChevronRight = faChevronRight;
+  // faChevronRight = faChevronRight;
 
   items:CarouselGame[] = [
     {

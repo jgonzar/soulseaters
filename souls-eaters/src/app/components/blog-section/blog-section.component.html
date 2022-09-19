@@ -1,0 +1,20 @@
+<section id="blog-section" class="blog-section container-fluid">
+  <div class="blog-heading">
+    <h2>Get the latest videogame news</h2>
+  </div>
+  <div class="blog-grid-section">
+      <div class="blogpost-card" *ngFor="let blogpost of blogposts">
+        <img [src]="blogpost.img">
+        <div class="blogpost-text">
+          <h3>{{blogpost.title}}</h3>
+          <p><i>"{{blogpost.content}}"</i></p>
+        </div>
+      </div>
+  </div>
+  <a href="/">
+    <button>
+      <p>READ MORE</p>
+    </button>
+  </a>
+</section>
+

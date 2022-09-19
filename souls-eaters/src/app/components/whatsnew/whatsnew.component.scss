@@ -20,19 +20,20 @@
     }
     a{
       text-decoration: none;
-    }
-    button{
       display:flex;
-      justify-content: center;
-      align-items: center;
-      padding:2% 3%;
-      margin:15px 0;
-      border:1px solid transparent;
-      border-radius: 5px;
-      font-family:var(--tomorrow);
-      font-size:1.4rem;
-      color:var(--black);
-      background-color:var(--white);
+      button{
+        display: flex;
+        width: auto;
+        padding:3% 5%;
+        border: 2px solid var(--yellow);
+        border-radius: 20px;
+        background-color: var(--black);
+        margin-top:15px;
+        color:var(--white);
+        span{
+          font-size: 1.2rem;
+        }
+      }
     }
   }
   .img-container{

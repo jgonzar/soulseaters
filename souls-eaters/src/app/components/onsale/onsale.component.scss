@@ -1,0 +1,48 @@
+.on-sale-container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  background-color: var(--black);
+  padding:4% 5%;
+  .grid-l{
+    background-image: url(../../../assets/onsale.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-r{
+    padding-left:15px;
+    h2{
+      font-size: 2.4rem;
+      font-weight:600;
+      color: var(--white);
+      span{
+        color:var(--blue);
+      }
+    }
+    p{
+      padding-top: 15px;
+      font-size: 1.2rem;
+      color:var(--white);
+      span{
+        color:var(--yellow);
+      }
+    }
+    a{
+      text-decoration: none;
+      display:flex;
+      button{
+        display: flex;
+        width: auto;
+        padding:3% 5%;
+        border: 1px solid var(--blue);
+        border-radius: 20px;
+        background-color: var(--black);
+        margin-top:15px;
+        color:var(--white);
+        span{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
