@@ -5,7 +5,7 @@
   background-color: var(--blue);
   .text-container{
     text-align: left;
-    h3, h1, p{
+    h1, p{
       color:var(--white);
     }
     h3{
@@ -25,14 +25,18 @@
         display: flex;
         width: auto;
         padding:3% 5%;
-        border: 2px solid var(--yellow);
+        border: 1px solid var(--yellow);
         border-radius: 20px;
         background-color: var(--black);
         margin-top:15px;
         color:var(--white);
+        transition: 0.5s;
         span{
           font-size: 1.2rem;
         }
+      }
+      button:hover{
+        color:var(--yellow);
       }
     }
   }

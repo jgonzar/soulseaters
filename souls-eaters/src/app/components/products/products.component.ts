@@ -33,7 +33,7 @@ export class ProductsComponent implements OnInit {
   {
     id:3,
     title:'Dark Souls 3',
-    platform:'PS3',
+    platform:'PS4',
     price:19.99,
     discount:0.8,
     img:'../../../assets/ds3.jpg',

@@ -16,6 +16,7 @@ import { OnsaleComponent } from './components/onsale/onsale.component';
 import { BlogSectionComponent } from './components/blog-section/blog-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialComponent } from './components/social/social.component';
+import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SocialComponent } from './components/social/social.component';
     OnsaleComponent,
     BlogSectionComponent,
     FooterComponent,
-    SocialComponent
+    SocialComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,

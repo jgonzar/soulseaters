@@ -7,10 +7,16 @@
     align-items: center;
     padding:4% 5% 0;
     a{
+      text-decoration: none;
       font-size:1.2rem;
+      color:var(--black);
+      opacity:0.8;
       fa-icon{
         margin-left:2.5px;
       }
+    }
+    a:hover{
+      opacity:1;
     }
   }
   .categories-grid-container{

@@ -1,0 +1,74 @@
+<section id="sidemenu" class="sidemenu">
+  <button class="hamburguer-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <img src="../../../assets/hamburger-menu.svg">
+  </button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <div class="btn-container">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <h3 class="offcanvas-title" id="offcanvasRightLabel">
+        <span>Welcome to</span>
+        Souls Eater
+        <br>
+        <span>USER</span>
+      </h3>
+      <a href="/">Sign <span>In</span></a>
+      <p>
+        Already have an account?
+        <a href="/">Log <span>In</span></a>
+      </p>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li>
+          <a href="/">
+            Cart <fa-icon [icon]="faShoppingCart"></fa-icon>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            Account <fa-icon [icon]="faUser"></fa-icon>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            Language <fa-icon [icon]="faFlagUsa"></fa-icon>
+          </a>
+        </li>
+        <li>
+          <a href="/" >
+            About Souls Eater <img src="../../../assets/sidemenu-logo.png">
+          </a>
+        </li>
+        <li>
+          <div class="dropdown mt-3">
+            <p class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Need Help?
+            </p>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/">
+                  FAQ <fa-icon [icon]="faCircleQuestion"></fa-icon>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/">
+                  Support <fa-icon [icon]="faPhoneFlip"></fa-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="sidemenu-footer">
+        <p>
+          © Souls Eater
+          <img src="../../../assets/sidemenu-logo.png">
+        </p>
+        <p>{{year}}</p>
+      </div>
+    </div>
+  </div>
+</section>

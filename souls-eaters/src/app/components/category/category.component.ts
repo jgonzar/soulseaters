@@ -10,7 +10,8 @@ export class CategoryComponent implements OnInit {
 
   @Input() category: Category = {
     id:0,
-    title:''
+    title:'',
+    link:''
   }
 
   constructor() { }

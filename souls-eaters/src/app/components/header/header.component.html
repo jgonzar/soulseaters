@@ -4,9 +4,21 @@
       <a href="#"><img src="../../../assets/main-logo.svg" alt="Souls Eaters Logo"></a>
     </div>
     <div class="header-menu-container">
-      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
-      <span (click)="onClick()"><img src="../../../assets/hamburger-menu.svg"></span>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <fa-icon [icon] = "faMagnifyingGlass"></fa-icon>
+      </button>
+      <app-sidemenu></app-sidemenu>
     </div>
+  </div>
+  <div class="collapse" id="collapseExample">
+    <input type="text" placeholder="What are you looking for?">
+    <a href="/">
+      <button>
+        <p>
+          Search<fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+        </p>
+      </button>
+    </a>
   </div>
   <nav>
     <ul class="nav-grid-container">
@@ -24,4 +36,5 @@
       </li>
     </ul>
   </nav>
+
 </header>

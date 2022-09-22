@@ -58,9 +58,11 @@
         background-color: var(--black);
         fa-icon{
           color:var(--white);
+          transition:0.25s;
         }
         fa-icon:hover{
-          color:var(--blue);
+          cursor:pointer;
+          color:var(--yellow);
         }
       }
     }

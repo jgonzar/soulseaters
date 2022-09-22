@@ -14,14 +14,17 @@ export class CategoriesComponent implements OnInit {
     {
       id:1,
       title:'Soulsborne',
+      link:'/'
     },
     {
       id:2,
       title:'Metroidvania',
+      link:'/'
     },
     {
       id:3,
       title:'Pixel Art',
+      link:'/'
     },
   ]
   constructor() { }

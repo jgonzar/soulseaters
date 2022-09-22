@@ -16,19 +16,22 @@ export class BlogSectionComponent implements OnInit {
       id:1,
       title:"Elden right it's amazing",
       img:'../../../assets/elden1.jpg',
-      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!'
+      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!',
+      link:'/'
     },
     {
       id:2,
       title:"Elden right it's amazing",
       img:'../../../assets/elden2.jpg',
-      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!'
+      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!',
+      link:'/'
     },
     {
       id:3,
       title:"Elden right it's amazing",
       img:'../../../assets/elden3.jpg',
-      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!'
+      content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime recusandae delectus deserunt debitis repellendus facilis ea, quibusdam facere! Consequuntur rem eveniet sequi voluptatibus? Veniam fugit impedit temporibus aperiam libero cum molestiae ut dolor commodi distinctio. Totam dolores eos quaerat blanditiis animi. Similique sed consequatur soluta, possimus excepturi quia vel pariatur perferendis obcaecati molestias animi dolor odio cupiditate cumque deleniti quos!',
+      link:'/'
     }
 ];
 

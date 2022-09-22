@@ -22,12 +22,15 @@ header{
         height:28px;
         width:30px;
       }
-      fa-icon{
-        cursor: pointer;
-        margin-right:20px;
-        transform: rotateY(180deg);
-        font-size:2rem;
-        color:var(--white);
+      button{
+        background-color: transparent;
+        fa-icon{
+          cursor: pointer;
+          margin-right:20px;
+          transform: rotateY(180deg);
+          font-size:2rem;
+          color:var(--white);
+        }
       }
     }
   }
@@ -48,12 +51,12 @@ header{
         text-decoration: none;
         font-size: 1.4rem;
         color:var(--lightgrey);
-        opacity:0.6;
         font-weight: 300;
         letter-spacing: 1px;
+        transition:0.25s;
       }
       a:hover{
-        opacity:1;
+        color:var(--yellow);
       }
       .link-active{
         opacity:1;
@@ -61,4 +64,51 @@ header{
       }
     }
   }
+}
+.collapse input, .collapsing input{
+  font-size: 1.4rem;
+  height:40px;
+  width:100%;
+  padding:4% 5%;
+  border: none;
+  background-color:var(--black);
+}
+.collapse input:focus, .collapsing input:focus{
+  border: -2px solid var(--yellow);
+}
+.collapsing, .show{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a{
+    text-decoration: none;
+    padding:1%;
+    button{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width:100px;
+      border:1px solid var(--blue);
+      border-radius: 20px;
+      background-color: var(--black);
+      p{
+        font-size: 1.2rem;
+        color:var(--white);
+        transition:0.5s;
+        fa-icon{
+          margin-left:5px;
+        }
+      }
+    }
+    button:hover{
+      p{
+        color:var(--yellow);
+      }
+    }
+  }
+}
+.collapse, .collapsing{
+  background-color:var(--black);
 }

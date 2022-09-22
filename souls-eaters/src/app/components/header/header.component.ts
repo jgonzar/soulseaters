@@ -13,15 +13,12 @@ export class HeaderComponent implements OnInit {
   faMagnifyingGlass = faMagnifyingGlass;
 
   // toggle
-
-
-  onClick(){
-    this.clicked.emit(this.sidemenuToggler);
-  }
+ 
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

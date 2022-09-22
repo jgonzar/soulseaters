@@ -6,7 +6,7 @@
       <div class="blogpost-card" *ngFor="let blogpost of blogposts">
         <img [src]="blogpost.img">
         <div class="blogpost-text">
-          <h3>{{blogpost.title}}</h3>
+          <a href="/"><h3>{{blogpost.title}}</h3></a>
           <p><i>"{{blogpost.content}}"</i></p>
         </div>
       </div>

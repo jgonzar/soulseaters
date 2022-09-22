@@ -6,18 +6,39 @@
   align-items: center;
   margin:0 auto;
   border-radius: 15px;
-  p{
+  transition:ease-in-out 0.3s;
+  a{
+    text-decoration: none;
     font-size:1.4rem;
     font-family: var(--tomorrow);
     color:var(--white);
+    transition:0.5s;
   }
+}
+.category-card:hover{
+  a{
+    color:var(--yellow);
+  }
+}
+.ct1,.ct2,.ct3{
+  cursor: pointer;
+  transition: 0.5s;
 }
 .ct1{
   background-image:url('../../../assets/soulsborn.jpg');
 }
+.ct1:hover{
+  background-image:url('../../../assets/soulsborn-hover.jpg');
+}
 .ct2{
   background-image:url('../../../assets/metroidvania.jpg');
 }
+.ct2:hover{
+  background-image:url('../../../assets/metroidvania-hover.jpg');
+}
 .ct3{
   background-image:url('../../../assets/pixelart.jpg');
+}
+.ct3:hover{
+  background-image:url('../../../assets/pixelart-hover.jpg');
 }
