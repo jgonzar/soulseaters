@@ -10,10 +10,10 @@
       <a *ngSwitchDefault href="#" class="noRating"> No rating avaible</a>
     </div>
     <p class="product-tittle">{{product.title}} - {{product.platform}}</p>
-    <p class="product-price">{{actualPrice | currency:'USD' }}</p>
+    <p class="product-price">{{disPrice | currency:'USD' }}</p>
     <p class="product-actual-price">{{product.price | currency:'USD'}}</p>
     <div class="product-btns-container">
-      <div class="cart-btn">
+      <div class="cart-btn" (click)="onAddToCart()">
         <fa-icon [icon]="faShoppingCart"></fa-icon>
       </div>
       <div class="fav-btn">

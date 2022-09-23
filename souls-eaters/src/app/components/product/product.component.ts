@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../../models/product.model';
+import { ProductService } from 'src/app/services/product.service';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -17,24 +18,23 @@ export class ProductComponent implements OnInit {
   faShoppingCart = faShoppingCart;
   faHeart = faHeart;
 
+  disPrice:number = 0;
+
   // product module
-    @Input() product:Product = {
-      id:0,
-      title:'',
-      price:0,
-      platform:'',
-      discount:0,
-      img:'',
-      rating:0
-    }
+  @Input() product: Product = this.productService.getDefaultProduct();
 
-    actualPrice:number = 0;
+  @Output() addedProduct = new EventEmitter<Product>();
 
-  constructor() { }
+  constructor(
+    private productService:ProductService
+  ) { }
 
   ngOnInit(): void {
-     // price calculation
-      this.actualPrice = this.product.price * this.product.discount;
+     //  price calculation
+    this.disPrice = this.product.price * this.product.discount;
   }
 
+  onAddToCart(){
+    this.addedProduct.emit(this.product);
+  }
 }

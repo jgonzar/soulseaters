@@ -10,17 +10,18 @@
       <app-sidemenu></app-sidemenu>
     </div>
   </div>
-  <div class="collapse" id="collapseExample">
-    <input type="text" placeholder="What are you looking for?">
-    <a href="/">
-      <button>
-        <p>
-          Search<fa-icon [icon]="faMagnifyingGlass"></fa-icon>
-        </p>
-      </button>
-    </a>
-  </div>
-  <nav>
+
+  <nav class="sticky-nav" ngStickyNav>
+    <div class="collapse" id="collapseExample">
+      <input type="text" placeholder="What are you looking for?">
+      <a href="/">
+        <button>
+          <p>
+            Search<fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+          </p>
+        </button>
+      </a>
+    </div>
     <ul class="nav-grid-container">
       <li>
         <a href="/" class="link-active">Home</a>
@@ -35,6 +36,15 @@
         <a href="/blog">Blog</a>
       </li>
     </ul>
+    <div class="cart-container">
+      <a href="/">
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+        <span>X items</span>
+      </a>
+      <p>
+        Total
+        <span>{{ total | currency:'USD'}}</span>
+      </p>
+    </div>
   </nav>
-
 </header>

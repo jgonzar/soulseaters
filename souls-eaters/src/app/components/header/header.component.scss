@@ -64,51 +64,80 @@ header{
       }
     }
   }
-}
-.collapse input, .collapsing input{
-  font-size: 1.4rem;
-  height:40px;
-  width:100%;
-  padding:4% 5%;
-  border: none;
-  background-color:var(--black);
-}
-.collapse input:focus, .collapsing input:focus{
-  border: -2px solid var(--yellow);
-}
-.collapsing, .show{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  a{
-    text-decoration: none;
-    padding:1%;
-    button{
-      display:flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width:100px;
-      border:1px solid var(--blue);
-      border-radius: 20px;
-      background-color: var(--black);
-      p{
-        font-size: 1.2rem;
-        color:var(--white);
-        transition:0.5s;
-        fa-icon{
-          margin-left:5px;
+  .sticky-nav{
+    width:100%;
+    z-index: 500;
+  }
+  .collapse input, .collapsing input{
+    font-size: 1.4rem;
+    height:40px;
+    width:100%;
+    padding:4% 5%;
+    border: none;
+    background-color:var(--black);
+  }
+  .collapse input:focus, .collapsing input:focus{
+    border: -2px solid var(--yellow);
+  }
+  .collapsing, .show{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      padding:1%;
+      button{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width:100px;
+        border:1px solid var(--blue);
+        border-radius: 20px;
+        background-color: var(--black);
+        p{
+          font-size: 1.2rem;
+          color:var(--white);
+          transition:0.5s;
+          fa-icon{
+            margin-left:5px;
+          }
+        }
+      }
+      button:hover{
+        p{
+          color:var(--yellow);
         }
       }
     }
-    button:hover{
-      p{
-        color:var(--yellow);
-      }
+  }
+  .collapse, .collapsing{
+    background-color:var(--black);
+  }
+  .cart-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:3% 5%;
+    font-size:1.2rem;
+    font-family: var(--tomorrow);
+    border-top:1px solid var(--blue);
+    background-color: var(--black);
+    a{
+      text-decoration: none;
+      display:flex;
+      flex-direction: row;
+      color:var(--blue);
+    }
+    p{
+      color:var(--blue);
+    }
+    span{
+      margin-left:3px;
+      color: var(--yellow);
     }
   }
 }
-.collapse, .collapsing{
-  background-color:var(--black);
-}
+

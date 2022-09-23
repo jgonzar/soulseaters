@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, ComponentFactoryResolver } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { StoreService } from 'src/app/services/store.service';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-products',
@@ -12,65 +14,24 @@ export class ProductsComponent implements OnInit {
   // icons
   faChevronRight = faChevronRight;
 
-  products:Product[] = [{
-    id:1,
-    title:'Dark Souls',
-    platform:'PS3',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/ds1.jpg',
-    rating:5
-  },
-  {
-    id:2,
-    title:'Dark Souls 2',
-    platform:'PS3',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/ds2.jpg',
-    rating:4
-  },
-  {
-    id:3,
-    title:'Dark Souls 3',
-    platform:'PS4',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/ds3.jpg',
-    rating:5
-  },
-  {
-    id:4,
-    title:'Sekiro',
-    platform:'PS4',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/sekiro-2.jpg',
-    rating:5
-  },
-  {
-    id:5,
-    title:'Bloodborne',
-    platform:'PS4',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/bloodborne-2.jpg',
-    rating:5
-  },
-  {
-    id:6,
-    title:'Hollow Knight',
-    platform:'Nintendo Switch',
-    price:19.99,
-    discount:0.8,
-    img:'../../../assets/hollow.jpg',
-    rating:5
-  },
-]
+  total:number = 0;
 
-  constructor() { }
+  @Input() products:Product[] = this.productService.getProducts();
 
-  ngOnInit(): void {
+  @Output() totalCart = new EventEmitter();
+
+  constructor(
+    private storeService: StoreService,
+    private productService: ProductService
+  ) {
   }
+  ngOnInit(): void {
 
+  }
+  onAddToShoppingCart(product:Product){
+    this.storeService.addProduct(product);
+    console.log(product);
+    this.total = this.storeService.getTotal();
+    console.log(this.total);
+  }
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { StickyNavModule } from 'ng2-sticky-nav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,7 +39,8 @@ import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    StickyNavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

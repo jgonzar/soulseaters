@@ -7,6 +7,6 @@
     </a>
   </div>
   <div class="products-grid-container">
-    <app-product [product]="product" *ngFor="let product of products"></app-product>
+    <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)"></app-product>
   </div>
 </section>
