@@ -81,18 +81,22 @@
           transition:0.25s;
           fa-icon{
             margin-left:3px;
+            transition: 0.25s;
           }
         }
         a:hover{
           color:var(--yellow);
           fa-icon{
-            color:var(--wite);
+            color:var(--blue);
           }
         }
         .dropdown{
           p{
             font-size: 2rem;
             color:var(--white);
+          }
+          p:hover{
+            color:var(--yellow);
           }
           .dropdown-menu{
             padding:2% 3%;
@@ -112,6 +116,10 @@
                 fa-icon{
                   margin-left:3px;
                 }
+              }
+              a:hover{
+                color:var(--yellow);
+                background-color:transparent;
               }
             }
             li:last-of-type{
@@ -144,3 +152,4 @@
 .mt-3{
   margin:0 !important;
 }
+

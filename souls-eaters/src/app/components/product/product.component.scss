@@ -13,21 +13,39 @@
     font-family:var(--tomorrow);
     width:100%;
     padding:7% 5% 10%;
-    .rating-container{
-      padding:3% 2%;
-      a{
-        text-decoration:none;
-        font-size: 1.8rem;
-        color:var(--blue);
+    .card-top{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .rating-container{
+        padding:3% 2%;
+        a{
+          text-decoration:none;
+          font-size: 1.8rem;
+          color:var(--yellow);
+        }
+        .noRating{
+          color:#757575;
+          font-size: 1rem;
+        }
       }
-      .noRating{
-        color:#757575;
-        font-size: 1rem;
+      .inStock-container{
+        font-size:1rem;
+        .inStock{
+          color:var(--blue);
+        }
+        .outStock{
+          color:#F99602;
+        }
       }
     }
     .product-tittle{
+      text-decoration: none;
+      display:flex;
       min-height: 42px;
       font-size: 1.6rem;
+      color:var(--black);
     }
     .product-price{
       display:inline-block;
@@ -64,7 +82,12 @@
           cursor:pointer;
           color:var(--yellow);
         }
+        .favToggle{
+          color:var(--yellow);
+        }
       }
     }
   }
 }
+
+

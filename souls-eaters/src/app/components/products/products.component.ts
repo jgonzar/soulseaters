@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output, ComponentFactoryResolver } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { StoreService } from 'src/app/services/store.service';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -13,12 +14,15 @@ export class ProductsComponent implements OnInit {
 
   // icons
   faChevronRight = faChevronRight;
-
-  total:number = 0;
+  faShoppingCart = faShoppingCart;
 
   @Input() products:Product[] = this.productService.getProducts();
 
-  @Output() totalCart = new EventEmitter();
+  @Input() shoppingCart:Product[] = this.storeService.getShoppingCart();
+
+  @Input() favProducts:Product[] = this.storeService.getFavProducts();
+
+  total:number = 0;
 
   constructor(
     private storeService: StoreService,
@@ -30,8 +34,12 @@ export class ProductsComponent implements OnInit {
   }
   onAddToShoppingCart(product:Product){
     this.storeService.addProduct(product);
-    console.log(product);
     this.total = this.storeService.getTotal();
-    console.log(this.total);
+    console.log(this.shoppingCart);
+  }
+
+  onAddToFavorite(product:Product){
+    this.storeService.addFav(product);
+    console.log(this.favProducts);
   }
 }

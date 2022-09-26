@@ -25,6 +25,8 @@ export class ProductComponent implements OnInit {
 
   @Output() addedProduct = new EventEmitter<Product>();
 
+  @Output() addedFav = new EventEmitter<Product>();
+
   constructor(
     private productService:ProductService
   ) { }
@@ -32,6 +34,15 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
      //  price calculation
     this.disPrice = this.product.price * this.product.discount;
+  }
+
+
+
+  clicked:boolean = false;
+
+  onClickFav(){
+    this.clicked = !this.clicked;
+    this.addedFav.emit(this.product);
   }
 
   onAddToCart(){

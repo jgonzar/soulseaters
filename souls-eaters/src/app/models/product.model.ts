@@ -5,5 +5,6 @@ export  interface Product{
   price:number,
   discount:number,
   img:string,
-  rating:number
+  rating:number,
+  inStock:boolean
 }

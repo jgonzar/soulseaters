@@ -115,29 +115,5 @@ header{
   .collapse, .collapsing{
     background-color:var(--black);
   }
-  .cart-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding:3% 5%;
-    font-size:1.2rem;
-    font-family: var(--tomorrow);
-    border-top:1px solid var(--blue);
-    background-color: var(--black);
-    a{
-      text-decoration: none;
-      display:flex;
-      flex-direction: row;
-      color:var(--blue);
-    }
-    p{
-      color:var(--blue);
-    }
-    span{
-      margin-left:3px;
-      color: var(--yellow);
-    }
-  }
 }
 

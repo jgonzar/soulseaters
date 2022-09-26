@@ -3,6 +3,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faFlagUsa } from '@fortawesome/free-solid-svg-icons';
 import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -18,12 +19,13 @@ export class SidemenuComponent implements OnInit {
   faShoppingCart = faShoppingCart;
   faUser = faUser;
   faFlagUsa = faFlagUsa;
+  faGamepad = faGamepad;
   faCircleQuestion = faCircleQuestion;
   faPhoneFlip = faPhoneFlip;
   faChevronDown = faChevronDown;
 
   year = new Date().getFullYear();
-  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -13,7 +13,8 @@ export class ProductService {
     platform:'',
     discount:0,
     img:'',
-    rating:0
+    rating:0,
+    inStock:false
   }
 
   private products:Product[] = [{
@@ -23,7 +24,8 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/ds1.jpg',
-    rating:5
+    rating:5,
+    inStock:true
   },
   {
     id:2,
@@ -32,7 +34,9 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/ds2.jpg',
-    rating:4
+    rating:4,
+    inStock:true
+
   },
   {
     id:3,
@@ -41,7 +45,8 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/ds3.jpg',
-    rating:5
+    rating:5,
+    inStock:true
   },
   {
     id:4,
@@ -50,7 +55,8 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/sekiro-2.jpg',
-    rating:5
+    rating:5,
+    inStock:false
   },
   {
     id:5,
@@ -59,7 +65,8 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/bloodborne-2.jpg',
-    rating:5
+    rating:5,
+    inStock:true
   },
   {
     id:6,
@@ -68,7 +75,8 @@ export class ProductService {
     price:19.99,
     discount:0.8,
     img:'../../../assets/hollow.jpg',
-    rating:5
+    rating:5,
+    inStock:true
   },];
 
   constructor() { }
@@ -79,5 +87,4 @@ export class ProductService {
   getProducts(){
     return this.products;
   }
-
 }

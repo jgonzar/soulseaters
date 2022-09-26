@@ -1,0 +1,31 @@
+.to-top {
+  cursor: pointer;
+  display:flex;
+  position: fixed;
+  height:0;
+  width:0;
+  right:15px;
+  bottom: 80px;
+  justify-content:center;
+  align-items: center;
+  margin: 0 8px 12px 0;
+  border:1px solid var(--blue);
+  border-radius:50%;
+  background-color:var(--black);
+  opacity:0;
+  transition: all 0.2s ease-in-out;
+  font-size:1.4rem;
+  z-index: 1000;
+  fa-icon{
+    color:var(--white);
+  }
+  fa-icon:hover{
+    color:var(--yellow);
+  }
+}
+
+.show-scrollTop {
+  height:40px;
+  width:40px;
+  opacity: 1;
+}

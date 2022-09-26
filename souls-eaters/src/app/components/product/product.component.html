@@ -1,15 +1,24 @@
 <div class="product-card">
   <app-img [img]="product.img"></app-img>
   <div class="product-info">
-    <div [ngSwitch]="product.rating" class="rating-container">
-      <a *ngSwitchCase="5" href="#5" title="5 stars">★★★★★</a>
-      <a *ngSwitchCase="4" href="#4" title="4 stars">★★★★</a>
-      <a *ngSwitchCase="3" href="#3" title="3 stars">★★★</a>
-      <a *ngSwitchCase="2" href="#2" title="2 stars">★★</a>
-      <a *ngSwitchCase="1" href="#1" title="1 star">★</a>
-      <a *ngSwitchDefault href="#" class="noRating"> No rating avaible</a>
+    <div class="card-top">
+      <div [ngSwitch]="product.rating" class="rating-container">
+        <a *ngSwitchCase="5" href="#5" title="5 stars">★★★★★</a>
+        <a *ngSwitchCase="4" href="#4" title="4 stars">★★★★</a>
+        <a *ngSwitchCase="3" href="#3" title="3 stars">★★★</a>
+        <a *ngSwitchCase="2" href="#2" title="2 stars">★★</a>
+        <a *ngSwitchCase="1" href="#1" title="1 star">★</a>
+        <a *ngSwitchDefault href="#" class="noRating"> No rating avaible</a>
+      </div>
+      <div class="inStock-container" [class.outOfStock]="product.inStock === false">
+        <p *ngIf="product.inStock === true ; else elseBlock" class="inStock">In Stock</p>
+        <ng-template #elseBlock>
+          <p class="outStock">Out of Stock</p>
+        </ng-template>
+      </div>
     </div>
-    <p class="product-tittle">{{product.title}} - {{product.platform}}</p>
+
+    <a href="/" class="product-tittle">{{product.title}} - {{product.platform}}</a>
     <p class="product-price">{{disPrice | currency:'USD' }}</p>
     <p class="product-actual-price">{{product.price | currency:'USD'}}</p>
     <div class="product-btns-container">
@@ -17,7 +26,7 @@
         <fa-icon [icon]="faShoppingCart"></fa-icon>
       </div>
       <div class="fav-btn">
-        <fa-icon [icon]="faHeart"></fa-icon>
+        <fa-icon [icon]="faHeart" (click)="onClickFav()" [class.favToggle]="clicked"></fa-icon>
       </div>
     </div>
   </div>

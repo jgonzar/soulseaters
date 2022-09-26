@@ -18,6 +18,7 @@ import { BlogSectionComponent } from './components/blog-section/blog-section.com
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialComponent } from './components/social/social.component';
 import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
+import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SidemenuComponent } from './components/sidemenu/sidemenu.component';
     BlogSectionComponent,
     FooterComponent,
     SocialComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

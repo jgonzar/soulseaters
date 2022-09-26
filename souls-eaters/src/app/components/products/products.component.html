@@ -7,6 +7,16 @@
     </a>
   </div>
   <div class="products-grid-container">
-    <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)"></app-product>
+    <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)" (addedFav)="onAddToFavorite($event)"></app-product>
+  </div>
+  <div class="cart-container" [class.show]="shoppingCart.length > 0">
+    <a href="/">
+      <fa-icon [icon]="faShoppingCart"></fa-icon>
+      <p>{{shoppingCart.length}} items</p>
+    </a>
+    <p>
+      <span>Total:</span>
+      {{total | currency:'USD'}}
+    </p>
   </div>
 </section>
